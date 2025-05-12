@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Festa Junina: Campo e Cidade</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🎊 Festa Junina: A Conexão entre o Campo e a Cidade 🎊</h1>
+    <p>🌽 Cultura, Tradição e Alegria para Todos os Lugares 🎶</p>
+  </header>
+
+  <div class="controls">
+    <button onclick="aumentarFonte()">A+</button>
+    <button onclick="diminuirFonte()">A-</button>
+  </div>
+
+  <div class="content" id="conteudo">
+    <div class="section">
+      <h2>🌾 As origens no campo</h2>
+      <p>
+        A Festa Junina tem suas raízes nas tradições rurais do Brasil, especialmente ligadas à vida no campo e à agricultura. Originalmente, essas festas celebravam o período das colheitas, principalmente o milho, que é a base de muitos pratos típicos. Era um momento de agradecer pela fartura da terra, pedir boas colheitas e reunir a comunidade em torno da fé, da música e da comida.
+      </p>
+      <p>
+        As comemorações incluem elementos como a quadrilha 💃🕺 (uma dança em grupo que representa um casamento na roça), as fogueiras 🔥, que simbolizam proteção e tradição, e comidas típicas como pamonha, canjica, bolo de milho e pé de moleque. Tudo isso é decorado com bandeirinhas coloridas e roupas caipiras que lembram o estilo de vida rural.
+      </p>
+      <img src="https://images.unsplash.com/photo-1622937448932-4f88a228fc8f" alt="Festa Junina no campo">
+    </div>
+
+    <div class="section">
+      <h2>🏙️ A festa chega à cidade</h2>
+      <p>
+        Com o tempo, a Festa Junina ultrapassou os limites do interior e chegou com força às cidades. Em centros urbanos de todo o Brasil, escolas, igrejas, clubes e comunidades realizam suas próprias festas juninas, adaptando os costumes do campo ao ambiente urbano. É uma forma de manter vivas as tradições culturais, mesmo fora do seu contexto original.
+      </p>
+      <p>
+        Nas cidades, a festa também é uma oportunidade de reunir as pessoas, valorizar a cultura popular e celebrar as raízes do povo brasileiro. Muitas vezes, há concursos de melhor traje caipira, barraquinhas com jogos e comidas típicas, e apresentações de quadrilhas organizadas por alunos e moradores. A essência da festa continua presente: união, alegria e identidade nacional. 🎉🌽
+      </p>
+      <img src="https://images.unsplash.com/photo-1625115208081-c9a33c016d6d" alt="Festa Junina na cidade">
+    </div>
+
+    <div class="section">
+      <h2>🤝 União que fortalece</h2>
+      <p>
+        A Festa Junina é uma das maiores expressões culturais do Brasil, porque consegue unir diferentes realidades: o campo e a cidade, o passado e o presente, a tradição e a modernidade. Em um mesmo ambiente, vemos a mistura de costumes, sotaques, sabores e ritmos vindos de várias regiões do país.
+      </p>
+      <p>
+        Essa festa é mais do que uma simples comemoração. Ela representa um elo entre gerações, entre o rural e o urbano, mostrando que é possível preservar o que é tradicional mesmo vivendo em uma sociedade moderna. Celebrar o São João é também celebrar o Brasil profundo, com todas as suas cores, músicas e histórias. 💛🔥
+      </p>
+    </div>
+
+    <!-- Adicionando o vídeo -->
+    <div class="section">
+      <h2>🎥 Assista ao vídeo sobre a Festa Junina</h2>
+      <p>Confira este vídeo para entender melhor as tradições e os principais elementos da Festa Junina!</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YFDRWRhRSHg" title="Festa Junina - Tradições e Cultura" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <!-- Imagens adicionais -->
+    <div class="section">
+      <h2>🌻 Mais imagens da Festa Junina</h2>
+      <p>Veja mais sobre o clima festivo e alegre das festas juninas no Brasil:</p>
+      <img src="https://images.unsplash.com/photo-1567661441-6f4a8b9e8d8c" alt="Comidas típicas da Festa Junina" />
+      <img src="https://images.unsplash.com/photo-1526515898241-453f832c7c1d" alt="Decoração típica de Festa Junina" />
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 - Viva a cultura popular brasileira! 🎈🌽🔥
+  </footer>
+
+  <script>
+    const conteudo = document.getElementById("conteudo");
+    let tamanhoAtual = 18;
+
+    function aumentarFonte() {
+      if (tamanhoAtual < 30) {
+        tamanhoAtual += 2;
+        conteudo.style.fontSize = tamanhoAtual + "px";
+      }
+    }
+
+    function diminuirFonte() {
+      if (tamanhoAtual > 14) {
+        tamanhoAtual -= 2;
+        conteudo.style.fontSize = tamanhoAtual + "px";
+      }
+    }
+  </script>
+
+</body>
+</html>
